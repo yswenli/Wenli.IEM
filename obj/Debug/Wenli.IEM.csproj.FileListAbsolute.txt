@@ -1,0 +1,11 @@
+E:\百度云\Develop\案例\Wenli.IEM\Wenli.IEM\bin\Debug\Win32\pinyin.dll
+E:\百度云\Develop\案例\Wenli.IEM\Wenli.IEM\bin\Debug\Win32\world.dll
+E:\百度云\Develop\案例\Wenli.IEM\Wenli.IEM\bin\Debug\Wenli.IEM.exe
+E:\百度云\Develop\案例\Wenli.IEM\Wenli.IEM\bin\Debug\Wenli.IEM.pdb
+E:\百度云\Develop\案例\Wenli.IEM\Wenli.IEM\bin\Debug\Newtonsoft.Json.dll
+E:\百度云\Develop\案例\Wenli.IEM\Wenli.IEM\bin\Debug\Newtonsoft.Json.xml
+E:\百度云\Develop\案例\Wenli.IEM\Wenli.IEM\obj\Debug\Wenli.IEM.Properties.Resources.resources
+E:\百度云\Develop\案例\Wenli.IEM\Wenli.IEM\obj\Debug\Wenli.IEM.WordBoard.resources
+E:\百度云\Develop\案例\Wenli.IEM\Wenli.IEM\obj\Debug\Wenli.IEM.csproj.GenerateResource.Cache
+E:\百度云\Develop\案例\Wenli.IEM\Wenli.IEM\obj\Debug\Wenli.IEM.exe
+E:\百度云\Develop\案例\Wenli.IEM\Wenli.IEM\obj\Debug\Wenli.IEM.pdb

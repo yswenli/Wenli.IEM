@@ -1,0 +1,13 @@
+E:\百度云\Develop\案例\Wenli.PinYin\Wenli.PinYin\Wenli.PinYin\obj\Debug\Wenli.PinYin.csprojResolveAssemblyReference.cache
+E:\百度云\Develop\案例\Wenli.PinYin\Wenli.PinYin\Wenli.PinYin\obj\Debug\Wenli.PinYin.Properties.Resources.resources
+E:\百度云\Develop\案例\Wenli.PinYin\Wenli.PinYin\Wenli.PinYin\obj\Debug\Wenli.PinYin.csproj.GenerateResource.Cache
+E:\百度云\Develop\案例\Wenli.PinYin\Wenli.PinYin\Wenli.PinYin\bin\Debug\Wenli.PinYin.exe
+E:\百度云\Develop\案例\Wenli.PinYin\Wenli.PinYin\Wenli.PinYin\bin\Debug\Wenli.PinYin.pdb
+E:\百度云\Develop\案例\Wenli.PinYin\Wenli.PinYin\Wenli.PinYin\obj\Debug\Wenli.PinYin.exe
+E:\百度云\Develop\案例\Wenli.PinYin\Wenli.PinYin\Wenli.PinYin\obj\Debug\Wenli.PinYin.pdb
+E:\百度云\Develop\案例\Wenli.PinYin\Wenli.PinYin\Wenli.PinYin\obj\Debug\Wenli.PinYin.WordBoard.resources
+E:\百度云\Develop\案例\Wenli.PinYin\Wenli.PinYin\Wenli.PinYin\bin\Debug\Win32\world.dll
+E:\百度云\Develop\案例\Wenli.PinYin\Wenli.PinYin\Wenli.PinYin\bin\Debug\CSkin.dll
+E:\百度云\Develop\案例\Wenli.PinYin\Wenli.PinYin\Wenli.PinYin\bin\Debug\Newtonsoft.Json.dll
+E:\百度云\Develop\案例\Wenli.PinYin\Wenli.PinYin\Wenli.PinYin\bin\Debug\Newtonsoft.Json.xml
+E:\百度云\Develop\案例\Wenli.PinYin\Wenli.PinYin\Wenli.PinYin\bin\Debug\Win32\pinyin.dll
