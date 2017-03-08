@@ -169,10 +169,16 @@ namespace Wenli.IEM.Win32
             {
                 KeyboardHookStruct MyKeyboardHookStruct = (KeyboardHookStruct)Marshal.PtrToStructure(lParam, typeof(KeyboardHookStruct));
 
+                #region 开关
+                if (MyKeyboardHookStruct.vkCode == 20 || MyKeyboardHookStruct.vkCode == 160 || MyKeyboardHookStruct.vkCode == 161)
+                {
+                    isLocked = isLocked ? false : true;
+                }
+                #endregion
+
                 #region
                 if (isLocked)
                 {
-                    
                     if (isStarted && MyKeyboardHookStruct.vkCode >= 48 && MyKeyboardHookStruct.vkCode <= 57)
                     {
                         var c = int.Parse(((char)MyKeyboardHookStruct.vkCode).ToString());
@@ -193,7 +199,7 @@ namespace Wenli.IEM.Win32
                             KeyEventArgs e = new KeyEventArgs(keyData);
                             KeyUpEvent(this, e);
                             isStarted = true;
-                        }                        
+                        }
                         if (MyKeyboardHookStruct.vkCode == 32)
                         {
                             OnSpaced(0);

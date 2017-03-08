@@ -42,7 +42,7 @@
             this.listView1.Location = new System.Drawing.Point(11, 59);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(479, 34);
+            this.listView1.Size = new System.Drawing.Size(403, 34);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -61,7 +61,7 @@
             this.toolStripStatusLabel1});
             this.statusStrip1.Location = new System.Drawing.Point(4, 100);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(489, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(417, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -69,15 +69,15 @@
             // 
             this.toolStripStatusLabel1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(464, 17);
-            this.toolStripStatusLabel1.Text = "                                                                                 " +
-    "       dev by wenli 2017";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(400, 17);
+            this.toolStripStatusLabel1.Text = "                                                                        dev by we" +
+    "nli 2017";
             // 
             // WordBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(497, 126);
+            this.ClientSize = new System.Drawing.Size(425, 126);
             this.ControlBox = false;
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.label1);

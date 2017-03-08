@@ -81,7 +81,7 @@ namespace Wenli.IEM
                     this.listView1.Items.Clear();
                     var arr = CacheHelper.Get(keys);
                     if (arr != null)
-                        for (int i = 0; i < arr.Length; i++)
+                        for (int i = 0; i < (arr.Length > 10 ? 9 : arr.Length); i++)
                         {
                             this.listView1.Items.Add((i + 1) + "、" + arr[i]);
                         }
