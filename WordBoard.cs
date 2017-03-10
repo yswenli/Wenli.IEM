@@ -24,6 +24,7 @@ namespace Wenli.IEM
             Program.keyBordHook.KeyUpEvent += KeyBordHook_KeyUpEvent;
             Program.keyBordHook.OnSpaced += KeyBordHook_OnSpaced;
             Program.keyBordHook.OnBacked += KeyBordHook_OnBacked;
+            Program.keyBordHook.OnPaged += KeyBordHook_OnPaged;
         }
 
 
@@ -69,6 +70,16 @@ namespace Wenli.IEM
         }
 
 
+        int pageIndex = 1;
+        private void KeyBordHook_OnPaged(int obj)
+        {
+            pageIndex = pageIndex + obj;
+            if (pageIndex < 1)
+                pageIndex = 1;
+            ShowCharatar();
+
+        }
+
 
         private void ShowCharatar()
         {
@@ -78,13 +89,18 @@ namespace Wenli.IEM
 
                 try
                 {
-                    this.listView1.Items.Clear();
-                    var arr = CacheHelper.Get(keys);
-                    if (arr != null)
-                        for (int i = 0; i < (arr.Length > 10 ? 9 : arr.Length); i++)
+                    var arr = CacheHelper.Get(keys).ToList().Skip((pageIndex - 1) * 9).Take(9).ToArray();
+                    if (arr != null && arr.Any())
+                    {
+                        this.listView1.Items.Clear();
+                        for (int i = 0; i < arr.Count(); i++)
                         {
                             this.listView1.Items.Add((i + 1) + "、" + arr[i]);
                         }
+                    }
+                    else
+                        pageIndex--;
+
                 }
                 catch
                 {

@@ -105,9 +105,11 @@ namespace Wenli.IEM.Win32
         private static extern short GetAsyncKeyState(int vKey);
         #endregion
 
+
+        public event KeyEventHandler KeyUpEvent;
         public event Action<int> OnSpaced;
         public event Action OnBacked;
-        public event KeyEventHandler KeyUpEvent;
+        public event Action<int> OnPaged;
 
         public void Start()
         {
@@ -156,7 +158,7 @@ namespace Wenli.IEM.Win32
         bool isStarted = false;
 
         /// <summary>
-        /// 
+        /// 按键处理
         /// </summary>
         /// <param name="nCode"></param>
         /// <param name="wParam"></param>
@@ -176,9 +178,21 @@ namespace Wenli.IEM.Win32
                 }
                 #endregion
 
+
                 #region
                 if (isLocked)
                 {
+                    #region page
+                    if (MyKeyboardHookStruct.vkCode == 33)
+                    {
+                        OnPaged(-1);
+                    }
+                    if (MyKeyboardHookStruct.vkCode == 34)
+                    {
+                        OnPaged(1);
+                    }
+                    #endregion
+
                     if (isStarted && MyKeyboardHookStruct.vkCode >= 48 && MyKeyboardHookStruct.vkCode <= 57)
                     {
                         var c = int.Parse(((char)MyKeyboardHookStruct.vkCode).ToString());
